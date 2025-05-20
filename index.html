@@ -131,9 +131,11 @@
           form.reset();
         } else {
           alert('Error al enviar el reclamo.');
+          console.log('Estado HTTP:', response.status);
         }
       } catch (error) {
         alert('Error de conexión.');
+        console.log('Estado HTTP:', response.status);
       }
     });
   </script>
