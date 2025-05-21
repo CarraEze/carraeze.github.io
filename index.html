@@ -5,18 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Formulario de Reclamos</title>
   <style>
+    img {
+      object-fit: cover;
+    }
+
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #ffffff;
       color: #333;
-    }
-
-    header {
-      background-color: #b30000;
-      color: white;
-      padding: 1.5rem;
-      text-align: center;
     }
 
     .container {
@@ -75,13 +72,35 @@
     button:hover {
       background-color: #8c0000;
     }
+
+    #wrapper{
+      width: 100%;
+      height: 10%;
+      background-color: #e52220;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      display: flex; 
+      justify-content:last baseline ; 
+      align-items: center;
+    }
+
+    #wrapper-items{
+      height: 50px;
+      font-size: 50px;
+    }
+
+    
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>SIALAR</h1>
-  </header>
+  <div id="wrapper">
+      <img id="wrapper-items" src="../images/logoSialar_blanco.png" alt="Logo">
+    <div id="wrapper-items" style="font-weight: bold;">
+      SIALAR
+    </div>
+  </div>
 
   <div class="container">
     <h2>Formulario de Reclamo</h2>
