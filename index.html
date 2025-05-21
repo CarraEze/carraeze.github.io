@@ -87,20 +87,22 @@
 
     #wrapper{
       width: 100%;
-      height: 10%;
+      padding: 0.5em;
+      height: fit-content;
       background-color: #e52220;
       color: white;
-      padding: 1.5rem;
       text-align: center;
       display: flex; 
       justify-content:last baseline ; 
       align-items: center;
+      vertical-align: bottom;
     }
 
     #wrapper-items{
-      height: 50px;
-      font-size: 50px;
-      vertical-align:middle;
+      height: 2rem;
+      line-height: 2rem;
+      font-size: 2em;
+      vertical-align:text-top;
     }
 
   </style>
@@ -108,7 +110,9 @@
 <body>
 
   <div id="wrapper">
-      <img id="wrapper-items" src="../images/logoSialar_blanco.png" alt="Logo">
+    <img id="wrapper-items" src="../images/logoSialar_blanco.png" alt="Logo">
+    <div id="wrapper-items" style="width: 1%; height: 1%;">
+    </div>
     <div id="wrapper-items" style="font-weight: bold;">
       SIALAR
     </div>
